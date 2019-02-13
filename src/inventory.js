@@ -1,6 +1,7 @@
 import _ from 'lodash'
 
-var inventory = [{id: 12, name: "Y-Solowarm", description: "Mandatory stable internet solution", price: "8.67", category: "Automotive"},
+var inventory = [
+{id: 12, name: "Y-Solowarm", description: "Mandatory stable internet solution", price: "8.67", category: "Automotive"},
 {id: 27, name: "Bitchip", description: "Team-oriented optimal hub", price: "4.06", category: "Automotive"},
 {id: 91, name: "Flexidy", description: "Profound uniform database", price: "2.27", category: "Automotive"},
 {id: 6, name: "Redhold", description: "Optional holistic leverage", price: "6.30", category: "Baby"},

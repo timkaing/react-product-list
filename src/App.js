@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import inventory, { categories } from './inventory'
 import './App.css';
+import CategoryButton from './CategoryButton'
+import Product from './Product'
 
 class App extends Component {
-
-  getCategories() {
-    return categories.map((cat => <button>{cat}</button>))
-  }
 
   render() {
     return (
@@ -14,11 +12,11 @@ class App extends Component {
         <h1>Show products here</h1>
 
         <ul>
-          {/* List product categories here */}
+          {categories.map(c => <CategoryButton category={c}></CategoryButton>)}
         </ul>
 
         <ul>
-          {/* Products listed here */}
+          {inventory.map(i => <Product name={i.name} description={i.description} price={i.price} category={i.category}></Product>)}
         </ul>
 
       </div>
