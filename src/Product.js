@@ -1,12 +1,13 @@
 import React from 'react';
+import { formatPrice } from './utils'
 
-const Product = (props) => {
+const Product = ({ name, category, description, price }) => {
     return(
-        <div>
-            <h1>{props.name}</h1>
-            <sub>{props.category}</sub>1
-            <p>{props.description}</p>
-            <p>${props.price}</p>
+        <div>   
+            <h1>{name}</h1>
+            <sub>{category}</sub>1
+            <p>{description}</p>
+            <p>{formatPrice(price)}</p>
         </div>
        
     )

@@ -1,8 +1,28 @@
 .App {
  width: 960px;
  margin: auto;
- display: grid;
+ /* display: grid; */
  grid-template-columns: 1fr 1fr 1fr;
 }
 
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    
 
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    border-radius: 6px;
+    background-color: #3498db;
+    margin: 15px 15px;
+    color: white;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
